@@ -1,0 +1,126 @@
+.footer {
+	background-color: #c5010a;
+	// .footer_inner
+	&_inner {
+		padding: 86px 0 36px 0;
+		@media (max-width: 700px) {
+			padding-top: 50px;
+		}
+	}
+	// .footer_top
+	&_top {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		grid-gap: 30px;
+		color: white;
+		margin-bottom: 46px;
+		margin-top: 9px;
+	}
+	// .footer_logo
+	&_logo {
+		margin-top: -9px;
+		@media (max-width: 900px) {
+			order: 1;
+		}
+	}
+	// .footer_img
+	&_img {
+		margin-bottom: 35px;
+	}
+	// .footer_text
+	&_text {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 18 / 14 * 100%;
+		letter-spacing: 0.008em;
+		max-width: 196px;
+	}
+	// .footer_lists
+	&_lists {
+		display: flex;
+		grid-gap: 160px;
+		@media (max-width: 1000px) {
+			grid-gap: 80px;
+		}
+		@media (max-width: 900px) {
+			flex: 1 1 100%;
+			order: 3;
+			grid-gap: 30%;
+		}
+	}
+	// .footer_list
+	&_list {
+		li {
+			a {
+				color: white;
+				@media (any-hover: hover) {
+					&:hover {
+						text-decoration: underline;
+					}
+				}
+			}
+			font-size: 14px;
+			font-weight: 600;
+			line-height: 18 / 14 * 100%;
+			letter-spacing: 0.008em;
+			margin-bottom: 18px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	// .footer_title
+	&_title {
+		font-weight: 700;
+		line-height: 19 / 16 * 100%;
+		letter-spacing: 0.005em;
+		margin-bottom: 29px;
+	}
+	// .footer_contacts
+	&_contacts {
+		transform: translateX(-80px);
+		a {
+			color: white;
+			@media (any-hover: hover) {
+				&:hover {
+					text-decoration: underline;
+					&::before {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		@media (max-width: 1100px) {
+			transform: none;
+		}
+		@media (max-width: 900px) {
+			order: 2;
+		}
+	}
+	// .footer_contact
+	&_contact {
+		font-size: 14px;
+		font-weight: 600;
+		line-height: 18 / 14 * 100%;
+		letter-spacing: 0.008em;
+		display: flex;
+		grid-gap: 8px;
+		align-items: center;
+		margin-bottom: 20px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&::before {
+			font-size: 20px;
+			color: white;
+		}
+	}
+	// .footer_bottom
+	&_bottom {
+		line-height: 19 / 16 * 100%;
+		letter-spacing: 0.005em;
+		color: white;
+	}
+}

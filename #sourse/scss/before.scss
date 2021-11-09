@@ -1,0 +1,84 @@
+//ШРИФТ=====================================================================
+
+$font-family: "Mulish", sans-serif;
+$font-size: 16px;
+
+//ПІДКЛЮЧЕНІ ШРИФТИ=====================================================================
+// GOOGLE FONTS (&display=swap)=====================================================================
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
+// /GOOGLE FONTS=====================================================================
+@font-face {
+	font-family: "icons";
+	src: url("../fonts/icons.eot?w82im7");
+	src: url("../fonts/icons.eot?w82im7#iefix") format("embedded-opentype"),
+		url("../fonts/icons.ttf?w82im7") format("truetype"), url("../fonts/icons.woff?w82im7") format("woff"),
+		url("../fonts/icons.svg?w82im7#icons") format("svg");
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: "icons" !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow:before {
+	content: "\e900";
+}
+.icon-arrow_small:before {
+	content: "\e901";
+}
+.icon-arrow_round:before {
+	content: "\e902";
+}
+.icon-gps:before {
+	content: "\e903";
+}
+.icon-Group:before {
+	content: "\e904";
+}
+.icon-list:before {
+	content: "\e905";
+}
+.icon-mail:before {
+	content: "\e906";
+}
+.icon-tel:before {
+	content: "\e907";
+}
+.icon-tick:before {
+	content: "\e908";
+}
+.icon-tick_small:before {
+	content: "\e909";
+}
+
+//ПІДКЛЮЧЕНІ ШРИФТИ=====================================================================
+
+//ШРИФТ=====================================================================
+//CONTAINER=====================================================================
+$container-width: 1232px;
+$container-padding: 15px;
+//CONTAINER=====================================================================
+//VARIABLES=====================================================================
+$red: #c5010a;
+$light-red: #fa3c45;
+$white-red: #fde5e6;
+$white: #fde5e6;
+$gray: #9a9ab0;
+$light-gray: #e2e2ea;
+$black: #11142d;
+//VARIABLES=====================================================================
